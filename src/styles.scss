@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Font */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-color: #333;
+  --background-color: #f8f9fa;
+}
+
+/* Apply the theme */
+body {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}

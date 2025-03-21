@@ -1,0 +1,25 @@
+<div class="todo-container">
+  <h2>Todo List</h2>
+
+  <form (submit)="addTodo(); $event.preventDefault()">
+    <div class="todo-input">
+      <input
+        name="todo"
+        [(ngModel)]="newTodo"
+        placeholder="Enter new task..."
+      />
+      <app-button type="submit">Add</app-button>
+    </div>
+  </form>
+
+  <ul>
+    <li *ngFor="let todo of todos">
+      <span [class.completed]="todo.completed" (click)="toggleTodo(todo)">
+        {{ todo.text }}
+      </span>
+      <app-button (click)="removeTodo(todo.id)" size="small" color="secondary"
+        >❌</app-button
+      >
+    </li>
+  </ul>
+</div>
