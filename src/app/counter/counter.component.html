@@ -1,8 +1,10 @@
 <div class="counter-wrapper">
   <h2>Counter</h2>
-  <div class="counter">
+  <div class="flex items-center justify-center gap-6">
     <app-button (click)="decrement()">-</app-button>
-    <div class="number">{{ count }}</div>
+    <div class="text-center">{{ count }}</div>
+    <div class="text-center">{{ count2() }}</div>
     <app-button (click)="increment()">+</app-button>
   </div>
+  <button (click)="incrementAsync()">Increase After 1s</button>
 </div>

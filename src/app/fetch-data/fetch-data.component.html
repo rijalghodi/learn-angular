@@ -1,0 +1,8 @@
+<div>
+  <h2 class="text-blue-500 text-">Posts</h2>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error">{{ error }}</div>
+  <ul *ngIf="!loading && !error">
+    <li *ngFor="let item of data">{{ item.title }}</li>
+  </ul>
+</div>

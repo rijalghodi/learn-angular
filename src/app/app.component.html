@@ -1,19 +1,32 @@
 <style>
   main {
     padding: 20px 24px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .grid-item {
+    grid-column: span 1;
   }
 </style>
 
 <main class="main">
   <h1>{{ title }}</h1>
-  <app-counter></app-counter>
-  <app-todo></app-todo>
-  <app-contact-form></app-contact-form>
+  <div class="grid">
+    <div class="grid-item">
+      <app-counter></app-counter>
+      <app-todo></app-todo>
+      <app-contact-form></app-contact-form>
+    </div>
+    <div class="grid-item">
+      <app-fetch-data></app-fetch-data>
+    </div>
+  </div>
 </main>
 <router-outlet />

@@ -5,6 +5,7 @@ import { CounterComponent } from './counter/counter.component';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CounterComponent,
     TodoComponent,
     ContactFormComponent,
+    FetchDataComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

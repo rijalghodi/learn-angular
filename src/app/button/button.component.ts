@@ -5,7 +5,10 @@ import { Component, Input } from '@angular/core';
   selector: 'app-button',
   standalone: true,
   imports: [CommonModule],
-  template: ` <button [ngClass]="['btn', 'btn-' + size, 'btn-' + color]">
+  template: `<button
+    class="text-sm font-bold"
+    [ngClass]="['btn', 'btn-' + size, 'btn-' + color]"
+  >
     <ng-content></ng-content>
   </button>`,
   styleUrl: './button.component.scss',
